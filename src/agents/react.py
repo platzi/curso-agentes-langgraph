@@ -36,5 +36,5 @@ Tus tools son:
 agent = create_agent(
     model="anthropic:claude-opus-4-1-20250805",
     tools=tools,
-    prompt=system_prompt,
+    system_prompt=system_prompt,
 )
