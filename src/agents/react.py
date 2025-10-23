@@ -36,5 +36,5 @@ Tus tools son:
 agent = create_agent(
     model="ollama:llama3.1",
     tools=tools,
-    prompt=system_prompt,
+    system_prompt=system_prompt,
 )

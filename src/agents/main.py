@@ -1,5 +1,3 @@
-# pip install -qU "langchain[anthropic]" to call the model
-
 from langchain.agents import create_agent
 
 def get_weather(city: str) -> str:
@@ -9,5 +7,5 @@ def get_weather(city: str) -> str:
 agent = create_agent(
     model="ollama:llama3.1",
     tools=[get_weather],
-    prompt="You are a helpful assistant",
+    system_prompt="You are a helpful assistant",
 )
