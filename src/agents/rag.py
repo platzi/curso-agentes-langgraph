@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage
 from langchain.chat_models import init_chat_model
 import random
 
-llm = init_chat_model("openai:gpt-4o", temperature=1)
+llm = init_chat_model("ollama:llama3.1", temperature=1)
 file_search_tool = {
     "type": "file_search",
     "vector_store_ids": ["vs_68cf0f0255e481919cd3be25b96c5080"],
@@ -25,7 +25,7 @@ class ContactInfo(BaseModel):
     phone: str = Field(description="The phone number of the person")
     age: str = Field(description="The age of the person")
 
-llm_with_structured_output = init_chat_model("anthropic:claude-3-5-sonnet-20240620", temperature=0)
+llm_with_structured_output = init_chat_model("ollama:llama3.1", temperature=0)
 llm_with_structured_output = llm_with_structured_output.with_structured_output(schema=ContactInfo)
 
 def extractor(state: State):
