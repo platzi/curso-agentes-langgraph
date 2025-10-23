@@ -34,7 +34,7 @@ Tus tools son:
 """
 
 agent = create_agent(
-    model="anthropic:claude-opus-4-1-20250805",
+    model="ollama:llama3.1",
     tools=tools,
     prompt=system_prompt,
 )

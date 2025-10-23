@@ -11,7 +11,7 @@ class ContactInfo(BaseModel):
     phone: str = Field(description="The phone number of the person")
     age: str = Field(description="The age of the person")
 
-llm = init_chat_model("anthropic:claude-3-5-sonnet-20240620", temperature=0)
+llm = init_chat_model("ollama:llama3.1", temperature=0)
 llm = llm.with_structured_output(schema=ContactInfo)
 
 def extractor(state: State):

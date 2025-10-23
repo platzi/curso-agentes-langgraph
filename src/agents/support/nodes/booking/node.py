@@ -5,7 +5,7 @@ from agents.support.nodes.booking.prompt import prompt_template
 
 
 booking_node = create_agent(
-    model="anthropic:claude-opus-4-1-20250805",
+    model="ollama:llama3.1",
     tools=tools,
     prompt=prompt_template.format(),
 )

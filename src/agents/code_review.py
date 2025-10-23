@@ -3,7 +3,7 @@ from typing import TypedDict
 from pydantic import BaseModel, Field
 from langchain.chat_models import init_chat_model
 
-llm = init_chat_model("openai:gpt-4.1-mini")
+llm = init_chat_model("ollama:llama3.1")
 
 class SecurityReview(BaseModel):
     vulnerabilities: list[str] = Field(description="The vulnerabilities in the code", default=None)

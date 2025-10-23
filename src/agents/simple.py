@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage
 from langchain.chat_models import init_chat_model
 import random
 
-llm = init_chat_model("openai:gpt-4o", temperature=1)
+llm = init_chat_model("ollama:llama3.1", temperature=1)
 
 class State(MessagesState):
     customer_name: str

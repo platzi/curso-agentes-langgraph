@@ -9,7 +9,7 @@ class RouteIntent(BaseModel):
         'conversation', description="The next step in the routing process"
     )
 
-llm = init_chat_model("openai:gpt-4o", temperature=0)
+llm = init_chat_model("ollama:llama3.1", temperature=0)
 llm = llm.with_structured_output(schema=RouteIntent)
 
 def intent_route(state: State) -> Literal["conversation", "booking"]:

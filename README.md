@@ -11,7 +11,7 @@ source .venv/bin/activate
 which python
 # install langgraph and langchain
 
-pip install --pre langgraph langchain langchain-openai
+pip install --pre langgraph langchain langchain-ollama
 pip install "langgraph-cli[inmem]"
 
 # run the agent
@@ -35,8 +35,7 @@ uv init
 uv venv
 
 # add dependencies
-uv add --pre langgraph langchain langchain-openai
-uv add --pre langchain-anthropic
+uv add --pre langgraph langchain langchain-ollama
 uv add "fastapi[standard]"
 
 # add dev dependencies

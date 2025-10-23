@@ -5,14 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi[standard]>=0.117.1",
-    "jinja2>=3.1.6",
-    "langchain>=1.0.0a6",
-    "langchain-anthropic>=1.0.0a1",
-    "langchain-openai>=1.0.0a2",
-    "langgraph>=1.0.0a3",
-    "langgraph-checkpoint-postgres>=2.0.23",
-]
+     "fastapi[standard]>=0.117.1",
+     "jinja2>=3.1.6",
+     "langchain>=1.0.0a6",
+     "langchain-ollama>=0.2.0",
+     "langgraph>=1.0.0a3",
+     "langgraph-checkpoint-postgres>=2.0.23",
+ ]
 
 [dependency-groups]
 dev = [

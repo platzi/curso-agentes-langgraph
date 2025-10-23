@@ -4,7 +4,7 @@ from agents.support.nodes.conversation.tools import tools
 from agents.support.nodes.conversation.prompt import prompt_template
 from langchain_core.messages import AIMessage
 
-llm = init_chat_model("openai:gpt-4o", temperature=1)
+llm = init_chat_model("ollama:llama3.1", temperature=1)
 llm = llm.bind_tools(tools)
 
 def conversation(state: State):
