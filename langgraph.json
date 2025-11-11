@@ -11,5 +11,8 @@
         "orchestrator": "./src/agents/orchestrator.py:agent",
         "evaluator": "./src/agents/evaluator.py:agent"
     },
-    "env": ".env"
+    "env": ".env",
+    "http": {
+        "cors_allowed_origins": ["*"]
+    }
 }
