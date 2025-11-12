@@ -5,13 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "deepagents>=0.2.5",
     "fastapi[standard]>=0.117.1",
     "jinja2>=3.1.6",
     "langchain==1.0.5",
     "langchain-anthropic==1.0.2",
     "langchain-openai==1.0.2",
     "langgraph==1.0.3",
+    "langgraph-api==0.5.12",
     "langgraph-checkpoint-postgres==3.0.1",
+    "tavily-python>=0.7.12",
 ]
 
 [dependency-groups]

@@ -1,15 +1,16 @@
 {
     "dependencies": ["."],
     "graphs": {
-        "agent": "./src/agents/main.py:agent",
-        "simple": "./src/agents/simple.py:agent",
-        "rag": "./src/agents/rag.py:agent",
-        "support": "./src/agents/support/agent.py:make_graph",
-        "booking": "./src/agents/support/nodes/booking/node.py:booking_node",
-        "react": "./src/agents/react.py:agent",
-        "code_review": "./src/agents/code_review.py:agent",
-        "orchestrator": "./src/agents/orchestrator.py:agent",
-        "evaluator": "./src/agents/evaluator.py:agent"
+        "1. simple": "./src/agents/simple.py:agent",
+        "2. chaining": "./src/agents/rag.py:agent",
+        "3. routing": "./src/agents/support/agent.py:make_graph",
+        "4. parallization": "./src/agents/code_review.py:agent",
+        "5. orchestrator": "./src/agents/orchestrator.py:agent",
+        "6. evaluator": "./src/agents/evaluator.py:agent",
+        "7. ReAct": "./src/agents/react.py:agent",
+        "8. ReWOO": "./src/agents/react.py:agent",
+        "9. DeepAgent": "./src/agents/deep_agent.py:agent",
+        "10. Sub-graph": "./src/agents/support/agent.py:make_graph"
     },
     "env": ".env",
     "http": {
