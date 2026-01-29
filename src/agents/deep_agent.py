@@ -30,25 +30,7 @@ You have access to an internet search tool as your primary means of gathering in
 Use this to run an internet search for a given query. You can specify the max number of results to return, the topic, and whether raw content should be included.
 """
 
-research_subagent = {
-    "name": "research-agent",
-    "description": "Used to research more in depth questions",
-    "system_prompt": research_instructions,
-    "tools": [internet_search],
-    "model": "openai:gpt-4o", 
-}
-subagents = [
-    research_subagent,
-    {
-        "name": "financial-analyst",
-        "description": "Analyzes financial data and market trends",
-        "system_prompt": "You are an expert financial analyst...",
-        "tools": [internet_search],
-        "model": "openai:gpt-5",  # Better for numerical analysis
-    },
-]
-
 agent = create_deep_agent(
-    model="claude-sonnet-4-5-20250929",
-    subagents=subagents
+    tools=[internet_search],
+    system_prompt=research_instructions
 )

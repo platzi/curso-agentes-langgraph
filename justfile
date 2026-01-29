@@ -1,4 +1,4 @@
-run:
+dev:
     uv run langgraph dev
 
 install:
